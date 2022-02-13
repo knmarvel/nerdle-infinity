@@ -1,10 +1,16 @@
 import './about_modal.css';
 
-function AboutModal() {
+function AboutModal(props) {
   return (
     <div className="aboutModal">
-      This modal pops up with information about the dev team and game
-      
+      <div className="modal-content">
+        This modal pops up with information about the dev team and game
+      </div>
+      <button 
+        className="closeButton"
+        onClick={() => props.toggleModal("about", false)}>
+          X
+      </button>
     </div>
   );
 }

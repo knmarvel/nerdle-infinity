@@ -1,0 +1,4 @@
+tbody{
+    display: flex;
+    flex-direction: column;
+}

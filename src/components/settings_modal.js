@@ -1,10 +1,16 @@
 import './settings_modal.css';
 
-function SettingsModal() {
+function SettingsModal(props) {
   return (
     <div className="settingsModal">
-      This modal pops up with sharing information at the end of the game
-      
+      <div className="modal-content">
+      This modal pops up with settings information
+      <button 
+        onClick={() => props.toggleModal("settings", false)}
+        className="closeButton"
+      >X
+      </button>
+      </div>
     </div>
   );
 }
